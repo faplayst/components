@@ -21,11 +21,15 @@
  * SOFTWARE.
  */
 
-import { AbstractButton, ButtonType } from "./AbstractButton";
+import { AbstractButton, ButtonType, IButtonProps } from "./AbstractButton";
 import DefaultButton from "./DefaultButton/DefaultButton";
 import PrimaryButton from "./PrimaryButton/PrimaryButton";
 
 export class Button extends AbstractButton {
+  constructor(props: IButtonProps) {
+    super(props);
+  }
+
   public render() {
     const props = this.props;
 
