@@ -2,6 +2,11 @@
   "extends": "../../../common/config/types/base",
   "compilerOptions": {
     "outDir": "./lib",
+    "rootDirs": [
+      "./Alert",
+      "./Button",
+      "./Nav"
+    ],
     "typeRoots": [
       "./node_modules/@types"
     ],
@@ -10,6 +15,9 @@
     ]
   },
   "exclude": [
-    "./node_modules"
+    "./*/node_modules"
+  ],
+  "include": [
+    "./**/*.ts*"
   ]
 }
